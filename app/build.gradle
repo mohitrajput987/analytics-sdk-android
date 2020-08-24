@@ -15,6 +15,29 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    flavorDimensions "environment"
+    productFlavors {
+        dev {
+            dimension "environment"
+            buildConfigField 'String', 'SERVER_BASE_URL', '"https://dev.baseurl.com"'
+        }
+
+        qa {
+            dimension "environment"
+            buildConfigField 'String', 'SERVER_BASE_URL', '"https://qa.baseurl.com"'
+        }
+
+        staging {
+            dimension "environment"
+            buildConfigField 'String', 'SERVER_BASE_URL', '"https://staging.baseurl.com"'
+        }
+
+        prod {
+            dimension "environment"
+            buildConfigField 'String', 'SERVER_BASE_URL', '"https://baseurl.com"'
+        }
+    }
+
     buildTypes {
         release {
             minifyEnabled false

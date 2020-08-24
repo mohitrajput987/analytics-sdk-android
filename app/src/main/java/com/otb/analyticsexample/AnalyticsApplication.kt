@@ -3,6 +3,7 @@ package com.otb.analyticsexample
 import android.app.Application
 import com.otb.analyticsexample.common.GoogleAnalyticsTracker
 import com.otb.analyticsexample.common.MixpanelAnalyticsTracker
+import com.otb.analyticsexample.example.SetupEvents
 import com.otb.analyticssdk.DefaultAnalyticsService
 
 /**
@@ -16,6 +17,7 @@ class AnalyticsApplication : Application() {
     override fun onCreate() {
         super.onCreate()
         registerTracker()
+        SetupEvents().trackEnvironment()
     }
 
     private fun registerTracker() {
