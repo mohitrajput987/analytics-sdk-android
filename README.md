@@ -17,4 +17,4 @@ Read our developer documents to integrate this SDK.
 
 ## GitHub Packages
 This SDK is published to GitHub packages which was released by GitHub in November 2019. If you want to know more about GitHub packages, read this article
-[GitHub Packages for Android & Java libraries]()
+[GitHub Packages for Android & Java libraries](https://dev.to/mohitrajput987/publish-android-library-using-github-packages-4lnf)
